@@ -1,0 +1,187 @@
+---
+title: "Data Glossary"
+icon: "book-open-lines"
+---
+
+## A Data Glossary for all export fields in BenefitFlow
+
+<CardGroup>
+<Card title="Employer Object" icon="square-1" href="/knowledge-base/what-fields-can-i-export-from-benefitflow#employer-object" horizontal/>
+<Card title="Policy Object" icon="square-2" href="/knowledge-base/what-fields-can-i-export-from-benefitflow#policy-object" horizontal/>
+<Card title="Broker Object" icon="square-3" href="/knowledge-base/what-fields-can-i-export-from-benefitflow#broker-object" horizontal/>
+<Card title="Broker Office Object" icon="square-4" href="/knowledge-base/what-fields-can-i-export-from-benefitflow#broker-office-object" horizontal/>
+<Card title="Contact Object" icon="square-5" href="/knowledge-base/what-fields-can-i-export-from-benefitflow#contact-object" horizontal/>
+</CardGroup>
+
+<Danger>
+  Heads up!  As you'll see marked below, certain fields may be sensitive to your filter selections.
+</Danger>
+
+### Employer Object
+
+| **Field Name** | **Example** | **Description** |
+| :--- | :--- | :--- |
+| Employer Name | Amazon.com Services, Llc | Legal name found on the Form 5500 |
+| Employer Website | Amazon.com |  |
+| Record Type | Employer | Every row in this export represents an employer |
+| Employer NAICS Description | Electronic Shopping and Mail-Order Houses |  |
+| Employer NAICS Code | 454110 |  |
+| Employer EIN | 0123456789 |  |
+| Employer City | Seattle | Based on HQ location reported on the Form 5500 |
+| Employer State | WA |  |
+| Employer Zip Code | 98109 |  |
+| Total Employees | 1,000,000 | Based on active participants across all health & welfare and retirement filings |
+| Benefit Eligible Employees | 950,000 | Based on active participants across all health & welfare filings |
+| 5500 Signor Name | Brent Jaye | Person who signed the Form 5500 (usually HR leader, CFO, or other fiduciary) |
+| Phone Number | (206) 266-1000 | Number listed on Form 5500 |
+| Funding | Self-Funded | Implied based on the company's medical premiums |
+| Entity Type | Single-Employer | Single-Employer is by far the most common type of Plan Sponsor, while Multiemployer and Multiple-Employer sponsors are typically seen among Union plans, PEOs, and other unique situations |
+| Primary Carrier | Blue Cross Blue Shield | Carrier that earned the most premiums |
+| Lines of Business | Health, Dental, Vision | Insurance products that were reported on the most recent health & welfare filings <br/> ***\*Field is sensitive to filter selections\**** |
+| Total Premiums | $15,000,000 | Premiums earned across all insurance carriers on the most recent health & welfare filings  <br/>***\*Field is sensitive to filter selections\**** |
+| Renewal Date | April 1st | Renewal date on the majority of the employers insurance policies |
+| Primary Broker | Brown & Brown | Broker that earned the most commissions on the most recent health & welfare filings |
+| Primary Broker Website | [https://www.bbinsurance.com/](https://www.bbinsurance.com/) |  |
+| Primary Broker Commissions | $120,000 | Commissions earned by the Primary Broker |
+| Primary Broker Office Name | Brown & Brown - Boston, MA | Office location that most likely serves the plan (based on proprietary logic) |
+| Primary Broker Office City | Boston |  |
+| Primary Broker Office State | MA |  |
+| Primary Broker Office Zip Code | 123456 |  |
+| Primary Broker Office Address | 100 Brown Street |  |
+| Lead Source | BenefitFlow |  |
+| Export Date | 2/24/2022 |  |
+| Filing Date | 3/31/2021 | Tax year end of the employer's most recent Form 5500 filing |
+| BenefitFlow User | [Matt@benefit-flow.com](mailto:Matt@benefit-flow.com) | BenefitFlow user who exported the data |
+| BenefitFlow Employer URL | [https://benefit-flow.com/Employer/820544687](https://benefit-flow.com/Employer/820544687) | URL of the employer's profile in BenefitFlow |
+
+<Warning>
+**Impact of Filter Selections:** The Line of Business Filter and Carrier filter will impact what is shown in the "Line of Business" field and the "Total Premiums" field.  For example, filtering on "Dental" and "Delta Dental" will only show premiums earned on dental policies where the carrier is Delta Dental.
+</Warning>
+
+### Policy Object
+
+| **Field Name** | **Example** | **Description** |
+| :--- | :--- | :--- |
+| Employer Name | Amazon.com Services, Llc | Legal name found on the Form 5500 |
+| Employer Website | Amazon.com |  |
+| Record Type | Policy | Every row represents an insurance policy reported by an employer |
+| Employer NAICS Description | Electronic Shopping and Mail-Order Houses |  |
+| Employer NAICS Code | 454110 |  |
+| Employer EIN | 0123456789 |  |
+| Employer City | Seattle | Based on HQ location reported on the Form 5500 |
+| Employer State | WA |  |
+| Employer Zip Code | 98109 |  |
+| Total Employees | 1,000,000 | Based on active participants across all health & welfare and retirement filings |
+| Benefit Eligible Employees | 950,000 | Based on active participants across all health & welfare filings |
+| 5500 Signor Name | Brent Jaye | Person who signed the Form 5500 (usually HR leader, CFO, or other fiduciary) |
+| Phone Number | (206) 266-1000 | Number listed on Form 5500 |
+| Funding | Self-Funded | Implied based on the company's medical premiums |
+| Entity Type | Single-Employer | Single-Employer is by far the most common type of Plan Sponsor, while Multiemployer and Multiple-Employer sponsors are typically seen among Union plans, PEOs, and other unique situations |
+| Plan Name | Amazon Health & Welfare Plan | Name of the benefit plan |
+| Policy Number | 1 | Each row of this export represents a policy |
+| Carrier | Blue Cross Blue Shield | Carrier on this policy |
+| Lines of Business | Health, Dental, Vision, Critical Illness | Insurance products that were reported on this policy |
+| Lines of Business, Detail | Cancer Indemnity | Any additional text info that was included  on the filing to describe the benefits offered |
+| Total Premiums | $15,000,000 | Premiums earned on this policy |
+| Covered Lives | 10,000 | Covered lived (employees + dependents) |
+| PEPM Rate | $125.00 | Premiums / Covered Lives / 12 |
+| Total Commissions | $150,000 | Commissions earned on this policy |
+| Renewal Date | April 1st | Renewal date observed across the majority of insurance policies |
+| Primary Broker | Brown & Brown | Broker that earned the most commissions on this policy |
+| Primary Broker Website | [https://www.bbinsurance.com/](https://www.bbinsurance.com/) |  |
+| Primary Broker Commissions | $120,000 | Commissions earned by the Primary Broker on this policy |
+| Primary Broker Office Name | Brown & Brown - Boston, MA | Office location that most likely serves the plan (based on proprietary logic) |
+| Primary Broker Office City | Boston |  |
+| Primary Broker Office State | MA |  |
+| Primary Broker Office Zip Code | 123456 |  |
+| Primary Broker Office Address | 100 Brown Street |  |
+| Lead Source | BenefitFlow |  |
+| Export Date | 2/24/2022 |  |
+| Filing Date | 3/31/2021 | Tax year end of the employer's most recent Form 5500 filing |
+| BenefitFlow User | [Matt@benefit-flow.com](mailto:Matt@benefit-flow.com) | BenefitFlow user who exported the data |
+| BenefitFlow Employer URL | [https://benefit-flow.com/Employer/820544687](https://benefit-flow.com/Employer/820544687) | URL of the employer's profile in BenefitFlow |
+
+### Broker Object
+
+| **Field Name** | **Example** | **Description** |
+| :--- | :--- | :--- |
+| Record Type | Broker | Every row in this export represents a benefits brokerage |
+| Broker Name | Brown & Brown | Name of the brokerage; scrubbed by BenefitFlow |
+| Broker Website | [https://www.bbinsurance.com/](https://www.bbinsurance.com/) |     |
+| Broker HQ City | Daytona Beach |     |
+| Broker HQ State | FL  |     |
+| Total Office Locations | 123 | Count of the total number of offices that BenefitFlow has identified for the brokerage<br/><br/>_**\*Field is sensitive to filter selections\***_ |
+| Total Clients | 1,498 | Count of the total number of clients that BenefitFlow has identified for the brokerage<br/><br/>_**\*Field is sensitive to filter selections\***_ |
+| Total Contacts | 300 | Count of the total number of contacts that BenefitFlow has been able to identify for the brokerage |
+| Total Employees | 10,000,000 | Sum of the total number of employees across all clients that are tied to the brokerage<br/><br/>_**\*Field is sensitive to filter selections\***_ |
+| Total Commissions | $129,000 | Sum of the total $ of commissions that the brokerage earned across it's clients<br/><br/>_**\*Field is sensitive to filter selections\***_ |
+| Total Carrier Premiums | $5,000,000 | Sum of the total $ of premiums that the brokerage placed across it's clients<br/><br/>_**\*Field is sensitive to filter selections\***_ |
+| Lead Source | BenefitFlow |     |
+| Export Date | 2/24/2022 |     |
+| BenefitFlow User | [Matt@benefit-flow.com](mailto:Matt@benefit-flow.com) |     |
+| BenefitFlow Broker URL | [https://benefit-flow.com/Broker?brokerId=ffff99aaccf53c9e994353538884d62e&brokerName=BROWN%20%26%20BROWN](https://benefit-flow.com/Broker?brokerId=ffff99aaccf53c9e994353538884d62e&brokerName=BROWN%20%26%20BROWN) |     |
+
+<Warning>
+**Impact of Filter Selections:** where noted above, filter selections will pass through to the book of business for each brokerage.  For example, filtering to >1,000 employees and location of MI will focus in on brokers that have exposure to clients that fit that criteria.  In turn, metrics such as Total Office Locations, Total Clients, Total Employees, Total Commissions, and Total Carrier Premiums will reflect clients that are in that target market.
+</Warning>
+
+### Broker Office Object
+
+| **Field Name** | **Example** | **Description** |
+| :--- | :--- | :--- |
+| Record Type | Broker Office | Every row in this export represents a brokerage office |
+| Broker Name | Brown & Brown | Name of the brokerage; scrubbed by BenefitFlow |
+| Broker Website | [https://www.bbinsurance.com/](https://www.bbinsurance.com/) |     |
+| Broker Office Name | Brown & Brown - Boston, MA |     |
+| Broker Office Address | 100 Brown Street |     |
+| Broker Office City | Boston |     |
+| Broker Office State | MA  |     |
+| Broker Office Zip Code | 123456 |     |
+| Total Clients | 1,498 | Count of the total number of clients that BenefitFlow has identified for the brokerage<br/><br/>_**\*Field is sensitive to filter selections\***_ |
+| Total Contacts | 20  | Count of the total number of contacts that BenefitFlow has been able to identify for the brokerage |
+| Total Employees | 10,000,000 | Sum of the total number of employees across all clients that are tied to the brokerage<br/><br/>_**\*Field is sensitive to filter selections\***_ |
+| Total Commissions | $129,000 | Sum of the total $ of commissions that the brokerage earned across it's clients<br/><br/>_**\*Field is sensitive to filter selections\***_ |
+| Total Carrier Premiums | $5,000,000 | Sum of the total $ of premiums that the brokerage placed across it's clients<br/><br/>_**\*Field is sensitive to filter selections\***_ |
+| Lead Source | BenefitFlow |     |
+| Export Date | 2/24/2022 |     |
+| BenefitFlow User | [Matt@benefit-flow.com](mailto:Matt@benefit-flow.com) |     |
+| BenefitFlow Broker URL | [https://benefit-flow.com/Broker?brokerId=ffff99aaccf53c9e994353538884d62e&brokerName=BROWN%20%26%20BROWN](https://benefit-flow.com/Broker?brokerId=ffff99aaccf53c9e994353538884d62e&brokerName=BROWN%20%26%20BROWN&brokerFilters=%7B%22employerStates%22%3A%5B%5D%2C%22brokerStates%22%3A%5B%5D%2C%22planTypes%22%3A%5B%5D%2C%22participantRanges%22%3A%5B0%2C3000000%5D%2C%22renewalDateFilters%22%3A%5B1%2C12%5D%2C%22industries%22%3A%5B%5D%2C%22filterPrimaryBroker%22%3Afalse%7D) |     |
+
+<Warning>
+**Impact of Filter Selections:** where noted above, filter selections will pass through to the book of business for each brokerage.  For example, filtering to >1,000 employees and location of MI will focus in on brokers that have exposure to clients that fit that criteria.  In turn, metrics such as Total Office Locations, Total Clients, Total Employees, Total Commissions, and Total Carrier Premiums will reflect clients that are in that target market.
+</Warning>
+
+### Contact Object
+
+| **Field Name** | **Example** | **Description** |
+| :--- | :--- | :--- |
+| Record Type | Broker Contact | Every row in this export represents a contact |
+| Contact Full Name | John Smith |     |
+| Contact First Name | John |     |
+| Contact Last Name | Smith |     |
+| Contact LinkedIn URL | linkedin.com/Johnsmith |     |
+| Contact Email | [john.smith@pacificresources.com](mailto:john.smith@pacificresources.com) |     |
+| Email Verification Status | Verified | Based on input from a 3rd party email verification service ([ZeroBounce](https://www.zerobounce.net/docs/email-list-validation/status-codes/)) |
+| Contact Mobile Phone 1 | (921) 404-6756 | Best available mobile phone number |
+| Contact Mobile Phone 2 |     |     |
+| Contact Mobile Phone 3 |     |     |
+| Contact Professional Phone 1 | (921) 876-1549 | Best available office phone number |
+| Contact Professional Phone 2 |     |     |
+| Contact Professional Phone 3 |     |     |
+| Contact City | Boston | Location of contact (as per social profiles) |
+| Contact State | MA  |     |
+| Contact Job Role | Producer | BenefitFlow defined category (based on proprietary logic) |
+| Contact Job Title | Benefits Consultant | Job title of contact (as per social profiles) |
+| Contact Yrs. In Role | 1.0 |     |
+| Contact Yrs. At Company | 3.2 |     |
+| Broker Name | Brown & Brown | Contact's current employer |
+| Broker Website | [https://www.bbinsurance.com/](https://www.bbinsurance.com/) |     |
+| Broker Office Name | Brown & Brown - Boston, MA | Closest office location (based on proprietary logic) |
+| Broker Office Address | 100 Brown Street |     |
+| Broker Office City | Boston |     |
+| Broker Office State | MA  |     |
+| Broker Office Zip Code | 123456 |     |
+| Lead Source | BenefitFlow |     |
+| Export Date | 2/24/2022 |     |
+| Data Last Updated | 12/31/2021 |     |
+| BenefitFlow User | [Matt@benefit-flow.com](mailto:Matt@benefit-flow.com) |     |

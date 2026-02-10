@@ -1,0 +1,217 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "aspen",
+  "name": "BenefitFlow Docs",
+  "colors": {
+    "primary": "#1f5adc",
+    "light": "#185adb",
+    "dark": "#1f5adc"
+  },
+  "favicon": "/favicon.png",
+  "background": {
+    "decoration": "grid"
+  },
+  "appearance": {
+    "default": "light",
+    "strict": true
+  },
+  "metadata": {
+    "timestamp": true
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Home",
+        "icon": "house",
+        "pages": [
+          "index"
+        ]
+      },
+      {
+        "tab": "Getting Started",
+        "icon": "rocket-launch",
+        "pages": [
+          "knowledge-base/getting-started",
+          {
+            "group": "The Basics",
+            "icon": "file-invoice",
+            "pages": [
+              "knowledge-base/the-basics",
+              "knowledge-base/getting-started-video",
+              "knowledge-base/filtering-saved-search-lists",
+              "knowledge-base/credits-and-exporting",
+              "knowledge-base/what-fields-can-i-export-from-benefitflow",
+              "knowledge-base/data-source-5500-overview",
+              "knowledge-base/data-source-our-verifed-contact-data",
+              "knowledge-base/deep-research"
+            ]
+          },
+          {
+            "group": "My Account",
+            "icon": "circle-user",
+            "pages": [
+              "knowledge-base/my-account",
+              "knowledge-base/getting-started-first-time-logging-in-to-benefitflow",
+              "knowledge-base/how-to-reset-a-users-password",
+              "knowledge-base/how-do-i-change-my-password"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Account & Billing",
+        "icon": "credit-card",
+        "pages": [
+          "knowledge-base/account-billing",
+          "knowledge-base/team-management",
+          "knowledge-base/how-to-manage-users-admin-guide",
+          "knowledge-base/billing",
+          "knowledge-base/updating-plan-subscription",
+          {
+            "group": "FAQ/Troubleshooting",
+            "icon": "circle-question",
+            "pages": [
+              "knowledge-base/faq",
+              "knowledge-base/my-login-and-or-temporary-password-is-not-working",
+              "knowledge-base/how-do-i-add-reassign-or-remove-a-license",
+              "knowledge-base/what-are-the-differences-between-roles",
+              "knowledge-base/new-customer-pricing",
+              "knowledge-base/new-sales"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Security & Privacy",
+        "icon": "shield-check",
+        "pages": [
+          "knowledge-base/security-privacy",
+          "knowledge-base/request-to-remove-your-information-from-benefitflow"
+        ]
+      },
+      {
+        "tab": "Advanced Concepts",
+        "icon": "bolt",
+        "pages": [
+          "knowledge-base/advanced-concepts",
+          "knowledge-base/employer-and-broker-profiles",
+          "knowledge-base/benefitflow-101",
+          "knowledge-base/build-marketing-lists",
+          "knowledge-base/referrals-from",
+          "knowledge-base/how-does-verifypro-work",
+          "knowledge-base/referrals-from-existing-broker-relationships",
+          "knowledge-base/top-benefitflow-use-cases"
+        ]
+      },
+      {
+        "tab": "Integrations",
+        "icon": "arrows-rotate",
+        "pages": [
+          "knowledge-base/integrations",
+          "knowledge-base/crm-integrations-getting-started",
+          "knowledge-base/overview-of-the-benefitflow-salesforce-integration",
+          {
+            "group": "Salesforce Integration",
+            "icon": "salesforce",
+            "pages": [
+              "knowledge-base/salesforce-integration",
+              "knowledge-base/how-do-i-setup-the-salesforce-integration"
+            ]
+          },
+          {
+            "group": "HubSpot Integration",
+            "icon": "hubspot",
+            "pages": [
+              "knowledge-base/hubspot-integration",
+              "knowledge-base/hubspot-integration-setup-instructions"
+            ]
+          },
+          {
+            "group": "Dynamics Integration",
+            "icon": "microsoft",
+            "pages": [
+              "knowledge-base/dynamics-integration",
+              "knowledge-base/how-do-i-setup-the-microsoft-dynamics-integration"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Data FAQs",
+        "icon": "circle-question",
+        "pages": [
+          "knowledge-base/data-faqs",
+          {
+            "group": "General Data Questions",
+            "icon": "circle-question",
+            "pages": [
+              "knowledge-base/general-data-questions",
+              "knowledge-base/how-to-make-sense-of-the-filtering-options",
+              "knowledge-base/where-does-the-data-come-from",
+              "knowledge-base/how-often-does-the-data-update",
+              "knowledge-base/what-is-the-primary-broker",
+              "knowledge-base/what-is-the-difference-between-reported-closet",
+              "knowledge-base/why-cant-i-find-an-employer-im-searching-for",
+              "knowledge-base/form-5500-filing-requirements",
+              "knowledge-base/what-is-included-in-the-employees-metric",
+              "knowledge-base/how-is-renewal-date-defined",
+              "knowledge-base/form-5500-faq",
+              "knowledge-base/can-i-tie-a-specific-producer-to-their-clients"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Release Notes & Product Updates",
+        "icon": "bullhorn",
+        "pages": [
+          "knowledge-base/release-notes-product-updates",
+          {
+            "group": "Product Update Announcements",
+            "icon": "bullhorn",
+            "pages": [
+              "knowledge-base/product-update-announcements",
+              "knowledge-base/december-2025-product-updates",
+              "knowledge-base/october-2025-product-updates"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "logo": {
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png",
+    "href": "https://www.benefitflow.com/"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Login",
+        "href": "https://benefit-flow.com/login"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Book a demo",
+      "href": "https://www.benefitflow.com/demo"
+    }
+  },
+  "contextual": {
+    "options": [
+     "copy",
+     "view",
+     "chatgpt",
+     "claude",
+     "perplexity",
+     "mcp",
+     "cursor",
+     "vscode"
+   ]
+  },
+  "footer": {
+    "socials": {
+      "linkedin": "https://www.linkedin.com/company/benefitflow/"
+    }
+  }
+}

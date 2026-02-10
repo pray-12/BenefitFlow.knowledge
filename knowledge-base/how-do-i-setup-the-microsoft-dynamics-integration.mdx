@@ -1,0 +1,188 @@
+---
+title: "Microsoft Dynamics Integration: Setup Instructions - Early Access"
+icon: "microsoft"
+---
+
+## Est. Setup Time: 15 minutes
+
+<Warning>
+To setup the integration, you must be a BenefitFlow Admin and a Dynamics Admin with read/write privileges for all fields. You must also have the ability to create Microsoft Applications in Microsoft Azure.
+</Warning>
+
+## Part 1: Create an Azure App Registration
+
+<Steps>
+<Step>
+**Login to Microsoft Azure**
+
+[portal.azure.com](https://portal.azure.com/#home)
+
+<Frame>
+<img src="/images/image-34.png" />
+</Frame>
+</Step>
+<Step>
+**Navigate to Microsoft Azure Active Directory**
+
+<Frame>
+<img src="/images/image-35.png" />
+</Frame>
+</Step>
+<Step>
+**Create a  Benefit Flow App in Microsoft**
+
+[portal.azure.com/#view/Microsoft\_AAD\_RegisteredApps/CreateApplicationBlade](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/CreateApplicationBlade/isMSAApp~/false)
+
+<Frame>
+<img src="/images/image-36.png" />
+</Frame>
+
+1. Click the “View” button for Manage Microsoft Entra ID
+2. From your Organization’s Overview page, find the “App Registrations” link within the side navigation bar on the left side of the screen
+
+<Frame>
+<img src="/images/image-37.png" />
+</Frame>
+
+3\. Once you have navigated to the “App Registrations” management page for your Azure account, click for the “+ New Registration” button to begin the setup process
+
+[https://portal.azure.com/#view/Microsoft\_AAD\_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps)
+
+<Frame>
+<img src="/images/image-38.png" />
+</Frame>
+
+4\. Once in the “Register an Application” flow, choose a descriptive name for the Integration Application (we recommend something like “BenefitFlow CRM Integration”)
+
+<Frame>
+<img src="/images/image-39.png" />
+</Frame>
+</Step>
+
+<Step title="Generate and save the Client Credentials and App Secret for your new application">
+
+1. Navigate back to the “App Registrations” Page
+2. Click on the name for your newly created Application
+3. Click the “Client credentials” button
+4. Create a new secret for the BenefitFlow integration
+
+<Frame>
+<img src="/images/image-40.gif" />
+</Frame>
+</Step>
+<Step title="Identify and save your Application ID, Directory ID, newly created Client Secret, and Dynamics Environment URL">
+
+<Frame>
+<img src="/images/image-41.png" />
+</Frame>
+
+<Frame>
+<img src="/images/image-42.png" />
+</Frame>
+
+Identify your Environment URL for your Dynamics Tenant:
+
+ie [https://org21965585.crm.dynamics.com](https://org21965585.crm.dynamics.com/)
+
+<Frame>
+<img src="/images/image-43.png" />
+</Frame>
+</Step>
+</Steps>
+
+## Part 2: Create a Power Platform Application User    
+
+### Steps to Create a MS Power Platform App User
+
+Now with your MS Dynamics App Registration completed for the BenefitFlow CRM integration tool, the final step for establishing a secure connection between the two systems is the creation of an Application User within Power Platform Admin Center
+
+<Steps>
+<Step>
+**Navigate to the Power Platform Admin Center at the following URL:** [https://admin.powerplatform.microsoft.com/](https://admin.powerplatform.microsoft.com/)
+</Step>
+<Step>
+**Click the “Manage” button to navigate to the Power Platform Environments page**
+<Frame>
+<img src="/images/image-44.png" />
+</Frame>
+</Step>
+
+<Step>
+**Once on the Environments page, select the Microsoft environment that you created your App Registration within (in our example below, we are using the QA environment but this will differ by organization)**
+<Frame>
+<img src="/images/image-45.png" />
+</Frame>
+</Step>
+
+<Step>
+**Once in the environment-specific management page, click the “Settings” link towards the top of the page**
+<Frame>
+<img src="/images/image-46.png" />
+</Frame>
+</Step>
+<Step>
+**From the Settings page for your selected environment, first click the “Users + Permissions” section to expand the option set and then click the “Application Users” option from within that list**
+<Frame>
+<img src="/images/image-47.png" />
+</Frame>
+</Step>
+<Step>
+**From the Application Users settings panel, click the “+ New App User” link at the top of the page**
+<Frame>
+<img src="/images/image-48.png" />
+</Frame>
+</Step>
+<Step>
+**For your new Application User that will be used to establish a connection to the BenefitFlow app registration, you can configure your user with the following options**
+
+   a. App: Select the name of your newly created App Registration (in our example below, we are using the “BenefitFlow Dynamics CRM Client” App, but your name may differ depending on how you completed the previous steps for the App Registration)
+
+   b. Business Unit: Select the appropriate Business Unit within your power platform environment (in our experience, most begin with “org” by default so searching that value in your dropdown should yield results)
+
+   c. Security Roles: we use System Administrator for simplicity and flexibility of the tool, but feel free to use a combination of more limited roles and/or custom security roles so long as the Role Set assigned is able to read Contact, Account, and User data from you Dynamics Dataverse environment
+
+<Frame>
+<img src="/images/image-49.png" />
+</Frame>
+</Step>
+</Steps>
+
+## Part 3: Connect to BenefitFlow
+
+### 1\. Connect your new Dynamics Application to BenefitFlow
+
+<Steps>
+<Step>
+Open BenefitFlow as a team Admin and navigate to integrations screen to connect Dynamics: [https://benefit-flow.com/Integrations/connection](https://benefit-flow.com/Integrations/connection)
+</Step>
+<Step>
+Select Microsoft Dynamics 365 and save your copied credentials and values.
+</Step>
+<Step>
+Click Save & Connect!
+</Step>
+</Steps>
+
+<Frame>
+<img src="/images/image-50.png" />
+</Frame>
+<br/>
+<Frame>
+<img src="/images/image-51.png" />
+</Frame>
+
+#### **That's it!** 
+
+Want to use the integration or verify that it’s working?
+
+- Create your own new list or navigate to a list of your choice ([https://benefit-flow.com/Lists](https://benefit-flow.com/Lists))
+- Confirm that the “Refresh Data” action works without errors
+- Push a sample record and click “View in CRM” without errors and to see the updated data in Dynamics.
+
+View more details on CRM mapping and what features are available here:
+
+[/knowledge-base/filtering-saved-search-lists](/knowledge-base/filtering-saved-search-lists)
+
+[/knowledge-base/crm-integrations-getting-started](/knowledge-base/crm-integrations-getting-started)
+
+[/knowledge-base/overview-of-the-benefitflow-salesforce-integration](/knowledge-base/overview-of-the-benefitflow-salesforce-integration)

@@ -1,0 +1,101 @@
+---
+title: "Salesforce Integration: Setup Instructions"
+icon: "wrench"
+---
+
+## Est. Setup Time: 10 minutes
+
+<Warning>
+**To setup the integration, you must be a BenefitFlow Admin and a Salesforce Admin with read/write privileges for all fields**
+</Warning>
+
+<Steps>
+<Step>
+**Login to Salesforce and click the “Setup” button in the top right of your screen**
+
+<Frame>
+<img src="/images/image-15.png" />
+</Frame>
+</Step>
+<Step>
+**Search for “App Manager” on the left side of the screen**
+
+<Frame>
+<img src="/images/image-16.png" />
+</Frame>
+</Step>
+<Step>
+**Create a new connected app by clicking the “New Connected App” button on the top right of the screen**
+
+<Frame>
+<img src="/images/image-17.png" />
+</Frame>
+</Step>
+<Step>
+**Enter in the values exactly as they are below and click save at the bottom of the screen**
+
+<Note>
+**Callback URL:** [https://prod-api.benefit-flow.com/crm-integration/callback](https://prod-api.benefit-flow.com/crm-integration/callback)
+</Note>
+
+<Frame>
+<img src="/images/image-18.png" />
+</Frame>
+<Frame>
+<img src="/images/image-19.png" />
+</Frame>
+
+<Note>
+**Note: \*\* Ensure that PKCE is Disabled\*\***
+</Note>
+</Step>
+<Step>
+**Scroll to the bottom and click "Save"**
+
+<Note>
+**Note:** It may take ~10 minutes for the new App to save in Salesforce.
+</Note>
+</Step>
+<Step>
+**Get the login credentials by clicking the “Manage Consumer Details” button below**
+
+<Frame>
+<img src="/images/image-20.png" />
+</Frame>
+</Step>
+<Step>
+**Copy the consumer key and secret**
+
+<Frame>
+<img src="/images/image-21.png" />
+</Frame>
+</Step>
+<Step>
+**Navigate to the “Integrations” page in BenefitFlow**
+
+<Frame>
+<img src="/images/image-22.png" />
+</Frame>
+</Step>
+<Step>
+**Click the “Connect” button to connect to Salesforce**
+
+<Frame>
+<img src="/images/image-23.png" />
+</Frame>
+</Step>
+<Step>
+**Enter in the “Consumer Key” and “Consumer Secret” from Salesforce then click “Save”**
+
+<Frame>
+<img src="/images/image-24.png" />
+</Frame>
+</Step>
+<Step>
+**Success!**
+
+<Frame>
+<img src="/images/image-25.png" />
+</Frame>
+</Step>
+</Steps>

@@ -1,0 +1,94 @@
+---
+mode: "custom"
+title: "BenefitFlow Documentation"
+---
+
+import { SearchBar } from "/snippets/search-bar.jsx";
+
+<div className="relative w-full flex items-center justify-center py-4 overflow-hidden bg-[#c1defe] dark:bg-[#1f5adc] pt-20 pb-20">
+  <div className="relative w-full max-w-6xl mx-auto px-5 py-4 z-10 flex justify-center">
+    <div className="flex flex-col items-center text-center w-full">
+      <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-black dark:text-white mb-4">
+        BenefitFlow Documentation
+      </h1>
+      <p className="text-lg md:text-xl text-black dark:text-white font-normal max-w-xl mb-8 leading-relaxed">
+        How can we help you?
+      </p>
+      <div className="flex items-center w-full max-w-lg">
+        <SearchBar placeholder="Search for answers..." />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div className="max-w-6xl mx-auto px-5 py-12">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    
+    <a href="/knowledge-base/getting-started" className="block not-prose rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg hover:border-primary dark:hover:border-primary-light transition-all duration-200">
+      <div className="flex flex-col items-center text-center px-6 py-8">
+        <div className="mb-4 text-primary dark:text-primary-light">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-12 h-12">
+            <path fillRule="evenodd" d="M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 01.75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 019.75 22.5a.75.75 0 01-.75-.75v-4.131A15.838 15.838 0 016.382 15H2.25a.75.75 0 01-.75-.75 6.75 6.75 0 017.815-6.666zM15 6.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" clipRule="evenodd" />
+            <path d="M5.26 17.242a.75.75 0 10-.897-1.203 5.243 5.243 0 00-2.05 5.022.75.75 0 00.625.627 5.243 5.243 0 005.022-2.051.75.75 0 10-1.202-.897 3.744 3.744 0 01-3.008 1.51c0-1.23.592-2.323 1.51-3.008z" />
+          </svg>
+        </div>
+        <h3 className="font-semibold text-lg text-gray-900 dark:text-white mb-2">Getting Started</h3>
+        <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Basic guides to help you get started with BenefitFlow</p>
+      </div>
+    </a>
+
+    <a href="/knowledge-base/account-billing" className="block not-prose rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg hover:border-primary dark:hover:border-primary-light transition-all duration-200">
+      <div className="flex flex-col items-center text-center px-6 py-8">
+        <div className="mb-4 text-primary dark:text-primary-light">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-12 h-12">
+            <path d="M4.5 3.75a3 3 0 00-3 3v.75h21v-.75a3 3 0 00-3-3h-15z" />
+            <path fillRule="evenodd" d="M1.5 9.75v7.5a3 3 0 003 3h15a3 3 0 003-3v-7.5H1.5zM6 12.75a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75v-.008zm2.25-.75a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h3.75a.75.75 0 00.75-.75v-.008a.75.75 0 00-.75-.75H8.25z" clipRule="evenodd" />
+          </svg>
+        </div>
+        <h3 className="font-semibold text-lg text-gray-900 dark:text-white mb-2">Account & Billing</h3>
+        <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Manage your account, team, and subscription</p>
+      </div>
+    </a>
+
+    <a href="/knowledge-base/advanced-concepts" className="block not-prose rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg hover:border-primary dark:hover:border-primary-light transition-all duration-200">
+      <div className="flex flex-col items-center text-center px-6 py-8">
+        <div className="mb-4 text-primary dark:text-primary-light">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-12 h-12">
+            <path fillRule="evenodd" d="M14.615 1.595a.75.75 0 01.359.852L12.982 9.75h7.268a.75.75 0 01.548 1.262l-10.5 11.25a.75.75 0 01-1.272-.71l1.992-7.302H3.75a.75.75 0 01-.548-1.262l10.5-11.25a.75.75 0 01.913-.143z" clipRule="evenodd" />
+          </svg>
+        </div>
+        <h3 className="font-semibold text-lg text-gray-900 dark:text-white mb-2">Advanced Concepts</h3>
+        <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Deeper dives, after you've mastered the basics</p>
+      </div>
+    </a>
+
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 max-w-4xl mx-auto">
+
+    <a href="/knowledge-base/integrations" className="block not-prose rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg hover:border-primary dark:hover:border-primary-light transition-all duration-200">
+      <div className="flex flex-col items-center text-center px-6 py-8">
+        <div className="mb-4 text-primary dark:text-primary-light">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-12 h-12">
+            <path fillRule="evenodd" d="M4.755 10.059a7.5 7.5 0 0112.548-3.364l1.903 1.903h-3.183a.75.75 0 100 1.5h4.992a.75.75 0 00.75-.75V4.356a.75.75 0 00-1.5 0v3.18l-1.9-1.9A9 9 0 003.306 9.67a.75.75 0 101.45.388zm15.408 3.352a.75.75 0 00-.919.53 7.5 7.5 0 01-12.548 3.364l-1.902-1.903h3.183a.75.75 0 000-1.5H2.984a.75.75 0 00-.75.75v4.992a.75.75 0 001.5 0v-3.18l1.9 1.9a9 9 0 0015.059-4.035.75.75 0 00-.53-.918z" clipRule="evenodd" />
+          </svg>
+        </div>
+        <h3 className="font-semibold text-lg text-gray-900 dark:text-white mb-2">Integrations</h3>
+        <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Getting started with our integrations</p>
+      </div>
+    </a>
+
+    <a href="/knowledge-base/data-faqs" className="block not-prose rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg hover:border-primary dark:hover:border-primary-light transition-all duration-200">
+      <div className="flex flex-col items-center text-center px-6 py-8">
+        <div className="mb-4 text-primary dark:text-primary-light">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-12 h-12">
+            <path fillRule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 01-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 01-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 01-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584zM12 18a.75.75 0 100-1.5.75.75 0 000 1.5z" clipRule="evenodd" />
+          </svg>
+        </div>
+        <h3 className="font-semibold text-lg text-gray-900 dark:text-white mb-2">Data FAQs</h3>
+        <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Common questions as you familiarize yourself with the various data sources</p>
+      </div>
+    </a>
+
+  </div>
+</div>

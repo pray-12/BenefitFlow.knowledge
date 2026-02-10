@@ -1,0 +1,80 @@
+---
+title: "CRM Integrations: Getting Started"
+icon: "circle-play"
+---
+
+## How to connect BenefitFlow to your CRM and sync your first list
+
+<Frame>
+<iframe referrerpolicy="origin" sandbox="allow-forms allow-scripts allow-same-origin allow-popups" allow="autoplay; fullscreen;" title="HubSpot Video" loading="lazy" data-hsv-id="191715305264" data-hsv-style="" data-hsv-width="688" data-hsv-height="387" data-hsv-autoplay="false" data-hsv-loop="false" data-hsv-muted="false" data-hsv-hidden-controls="false" data-hsv-full-width="false" src="https://play.hubspotvideo.com/v/21206862/id/191715305264?parentOrigin=https%3A%2F%2F21206862.hs-sites.com&amp;renderContext=hubl-iframe&amp;locale=en#hsvid=188e93bb-6022-42ca-b2e5-07f0181c2c80"></iframe>
+</Frame>
+
+### How to Connect BenefitFlow to Your CRM (Salesforce or HubSpot)
+
+BenefitFlow offers seamless, native integrations with **Salesforce** and **HubSpot**, enabling you to push detailed records (**Employers, Contacts, Brokers, and Broker Office Locations**) directly into your CRM with minimal setup.
+
+<Warning>
+**Before you start the setup process:**  
+
+Ensure you are both a **BenefitFlow Admin** and either a **Salesforce or HubSpot Admin** with **read/write access** to relevant CRM fields.
+</Warning>
+
+### Integration Setup Steps
+
+
+- **Accessing Integration Settings**
+	1. Log in to your BenefitFlow account.
+	2. In the upper-right corner, click your **name** and select **Integrations**.
+	3. On the Integrations page, choose **Salesforce** or **HubSpot** to begin connection.
+- **Connecting to Salesforce**
+	- Use **1-click authentication** for quick setup, or
+	- Use **Manual Credentials Entry** for custom setups (refer to the [Setup Guide](/knowledge-base/how-do-i-setup-the-salesforce-integration) for details).
+	- **Sandbox support** is available if you’d like to test before syncing to production.
+- **Connecting to HubSpot**
+	- Use our **1-click authentication** to connect instantly.
+	- **Sandbox environments** are also supported for safe testing.
+
+### Mapping Fields Between BenefitFlow and Your CRM
+
+Once connected, configure your integration by mapping key fields between platforms:
+
+- Click **Integration Settings**
+- Use **Add Field Mapping** to:
+	- Select a **BenefitFlow field**
+	- Choose a corresponding **CRM field**, or use a constant/custom value
+	- Define whether the field can **overwrite** existing values or update only if empty
+	- Click **Save Changes** to finalize
+
+Mappings can be customized for:
+
+- **Employer vs. Broker data**
+- **Accounts vs. Child Accounts vs. Contacts**
+
+### Syncing Data to Your CRM
+
+- Navigate to the **Lists** tab
+- Choose a list (e.g., Brokers, Broker Contacts, Employers, Employer Contacts)
+- Click **Sync** on the list to initiate
+
+**Smart Sync Logic:**
+
+- ✅ **Net-New**: If the record doesn’t exist in your CRM, BenefitFlow adds it
+- 🔁 **Update**: If the record exists, only approved mapped fields are updated
+- ✔️ **Synced**: If no changes are needed, the record is marked as synced
+
+**Additional Tools:**
+
+- Use **Assign Owner** to manually reassign CRM record ownership
+- Push records **one-by-one** or **bulk sync** your entire list using **“Sync to CRM”**
+
+### Post-Sync Actions
+
+Once synced, you can:
+
+- Click into a record from BenefitFlow to view it directly in your CRM
+- Verify updates went through as expected
+- Continue refining field mappings as your CRM evolves
+
+### Need Help?
+
+Contact customerteam@benefit-flow.com for hands-on support.

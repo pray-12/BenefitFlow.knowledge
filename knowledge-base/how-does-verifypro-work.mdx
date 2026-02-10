@@ -1,0 +1,115 @@
+---
+title: "Pinpoint Verified Producers Using VerifyPro"
+icon: "circle-play"
+---
+
+## How BenefitFlow uses state licensing data to enrich broker contacts
+
+<Frame>
+<iframe src="https://www.tella.tv/video/clx3p4omo022v09mk10iqdgzq/embed?b=0&amp;title=1&amp;a=1&amp;loop=0&amp;t=0&amp;muted=0&amp;wt=0" allowfullscreen="" allowtransparency="">&amp;lt;a href="https://www.tella.tv/video/clx3p4omo022v09mk10iqdgzq/view"&amp;gt;Watch Pinpoint Verified Producers in Tella screen recorder&amp;lt;/a&amp;gt;</iframe>
+</Frame>
+
+## How It Works
+
+VerifyPro is a proprietary method BenefitFlow uses to a) correctly identify health and benefits producers and b) enrich broker contacts with carrier information.  At the heart of this feature is Producer Licensing data.
+
+Every insurance producer in the U.S. is required to keep an active license with the Departments of Insurance for every state they do business in.  For example, if a producer wants to place insurance products with clients in the state of New York, they MUST have an active producer license with that state.
+
+## Producer Verification
+
+Importantly, producers can have several different types of licenses - the common ones are: Health, Life, Property, and Casualty.  **BenefitFlow reads from this licensing data on a monthly basis to keep an active record of which broker contacts are licensed to sell Health and Life products.  These contacts are marked as 'Verified' when searching in BenefitFlow.**  **We also use this data to remove contacts that are only licensed to sell Property and Casualty products.**
+
+<Frame>
+![](/images/image-6.png)
+</Frame>
+
+## Carrier Appointments
+
+BenefitFlow also leverages this data to understand each producer's carrier appointments.  Carrier appointments represent an authorization from a carrier to place their products in a specific state.  Said another way, if I want to place products with \[Carrier A\] in the state of \[New York\], I must be authorized (aka "appointed") by that carrier.  
+
+<Frame>
+![](/images/image-7.png)
+</Frame>
+
+**This data can be highly valuable when determining which producers to target.**  For example, I may want to understand which producers in the state of \[New York\] place products with \[Competitor A\].  Or understand which producers are *not* licensed to sell my products.
+
+Carrier appointments can also help identify which producers have the largest books of business.  Generally speaking, producers who have a long list of carrier appointments have more experience and work with a wider range of clients.  
+
+<Frame>
+![](/images/image-8.png)
+</Frame>
+
+*(Brandon has clearly been around the block)*
+
+## FAQs
+
+<AccordionGroup>
+<Accordion title="Who is required to have an insurance producer license?">
+Producers and anyone directly involved in the sale, solicitation, or negotiation of insurance products are required to have an insurance producer license. This includes roles such as Account Managers and Vendor Specialists who work closely with Producers. Consultants who provide advice but do not directly sell insurance may not always need a license.
+</Accordion>
+<Accordion title="How often is this data updated?">
+
+BenefitFlow updates its producer licensing and carrier appointment data on a monthly basis to ensure the information remains current and accurate.
+</Accordion>
+
+<Accordion title="Why would a contact not be verified?">
+
+There could be a few reasons why a contact is not verified:
+
+- Some roles (like 'Benefits Consultants') that aren't directly placing products won't always have licenses. We'll still have those contacts in our database but won't be able to mark them as 'verified'.
+- If a producer's license has expired or been terminated, they will no longer show as verified until they renew their license.
+- We're currently only pulling data from 40 states; if someone doesn't have a license in any of those 40 states, we won't be able to verify them.
+</Accordion>
+
+<Accordion title="What states does BenefitFlow currently cover for producer verification?">
+
+VerifyPro currently verifies producer licenses across the 40 states listed below.
+
+It's important to note that as long as a producer is licensed in one of these 40 states, we are able to pull licensing data.  However, if a producer is *only* licensed in one of the 10 missing states, we will not yet have data on that individual.
+
+|  |
+| --- |
+|Texas|
+| Florida |
+| New York |
+| Illinois |
+| Georgia |
+| North Carolina |
+| New Jersey |
+| Arizona |
+| Massachusetts |
+| Tennessee |
+| Indiana |
+| Missouri |
+| Maryland |
+| Wisconsin |
+| Colorado |
+| Minnesota |
+| South Carolina |
+| Alabama |
+| Oregon |
+| Oklahoma |
+| Connecticut |
+| Utah |
+| Iowa |
+| Nevada |
+| Arkansas |
+| Kansas |
+| New Mexico |
+| Nebraska |
+| Idaho |
+| West Virginia |
+| Hawaii |
+| New Hampshire |
+| Montana |
+| Rhode Island |
+| Delaware |
+| South Dakota |
+| North Dakota |
+| Alaska |
+| District of Columbia |
+| Vermont |
+| Wyoming |
+
+</Accordion>
+</AccordionGroup>

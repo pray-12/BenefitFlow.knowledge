@@ -1,0 +1,114 @@
+---
+title: "CRM Integrations: Overview Guide"
+icon: "book-open-lines"
+---
+
+
+## FAQs and general info
+
+<AccordionGroup>
+<Accordion title="Which CRMs can BenefitFlow integrate with?">
+
+BenefitFlow currently supports native integrations with Salesforce and HubSpot.  
+  
+<Frame>
+<img src="/images/image-9.png" />
+</Frame>
+</Accordion>
+<Accordion title="What data can BenefitFlow sync to your CRM?">
+
+BenefitFlow’s Salesforce integration allows users to push Employers, Employer Contacts, Brokers, Broker Office Locations, and Broker Contacts... **and automatically manage the associations between them.**
+
+<Frame>
+<img src="/images/image-10.png" />
+</Frame>
+</Accordion>
+
+<Accordion title="How does BenefitFlow prevent duplicate records?">
+Before syncing over any data to your CRM, BenefitFlow will compare our records against the records in your CRM.
+
+
+<Frame>
+<img src="/images/image-11.png" />
+</Frame>
+
+**Net-New** = Record will be pushed as a Net New Record.
+
+**Updates** **Available** = Record already exists in your CRM.  Sync will overwrite the highlighted fields.
+
+**Synced** \= Record already exists in your CRM and no updates are available.
+
+</Accordion>
+<Accordion title="Matching Fields">
+
+| **Object** | **Unique Identifier** | **Example** |
+| :--- | :--- | :--- |
+| Employers | Website | walmart.com |
+| Employer Contacts | Email | john.smith@walmart.com |
+| Brokers | Website | mercer.com |
+| Broker Office Locations | Website + City + State | mercer.com + New York + NY |
+| Broker Contacts | Email Address | john.smith@mercer.com |
+
+<Check>
+BenefitFlow maintains current and historical email addresses, meaning we can establish a match with your pre-existing contacts that may have stale email address.
+</Check>
+</Accordion>
+
+<Accordion title="How are BenefitFlow fields mapped to your CRM fields?">
+
+Admin users can configure the mapping table in BenefitFlow to your desired specifications.
+
+### Mapping Table for Accounts
+
+*(for syncing Broker and Employer records)*
+
+<Frame>
+<img src="/images/image-12.png" />
+</Frame>
+
+<Tip>
+**Tip:** Admins can choose to toggle on/off "Allow Overwrite" on a field-by-field basis.  When overwrite is turned 'off', BenefitFlow will only write to the field if it's current value is 'null' in your CRM.  If turned 'on', BenefitFlow will overwrite any pre-existing values.
+</Tip>
+
+### Mapping Table for Child Accounts
+
+*(for syncing Broker Office records)*
+
+<Frame>
+<img src="/images/image-13.png" />
+</Frame>
+
+### Mapping Table for Contacts
+
+*(for syncing Employer and Broker Contact records)*
+
+<Frame>
+<img src="/images/image-14.png" />
+</Frame>
+</Accordion>
+</AccordionGroup>
+
+## Other FAQs
+
+<AccordionGroup>
+<Accordion title="Who can setup the CRM integration?">
+
+BenefitFlow Admin permissions are required to authenticate with your CRM and configure field mappings.  **Your BenefitFlow Customer Success Manager can provide the relevant user(s) with those permissions.**
+
+That user also requires Salesforce or HubSpot Admin permissions to provide Read/Write access to BenefitFlow.
+
+</Accordion>
+<Accordion title="Who is able to sync data from BenefitFlow?">
+
+Both standard users and admin users are able to sync data once the integration is setup.  However, **standard users are restricted to only syncing net-new records**.  Admin users are able to sync net-new records, push overwrites to pre-existing records, and make adjustments to the mapping table.
+</Accordion>
+
+<Accordion title="What level of CRM access does BenefitFlow have?">
+
+BenefitFlow authenticates using OAuth 2.0 and the integration requires that BenefitFlow has read / write access to the relevant tables and fields in your CRM.
+</Accordion>
+<Accordion title="How does BenefitFlow set Contact Owners and Account Owners when syncing?">
+
+BenefitFlow will assign the Contact Owner based on the user that originally clicked "Get Contact" on the contact.  BenefitFlow does not set an Account Owner when syncing to the Account object.
+</Accordion>
+</AccordionGroup>
