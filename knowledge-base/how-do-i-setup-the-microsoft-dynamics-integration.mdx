@@ -18,14 +18,14 @@ To setup the integration, you must be a BenefitFlow Admin and a Dynamics Admin w
 [portal.azure.com](https://portal.azure.com/#home)
 
 <Frame>
-<img src="/images/image-34.png" />
+<img src="/images/image-34.png" alt="Login to Microsoft Azure" />
 </Frame>
 </Step>
 <Step>
 **Navigate to Microsoft Azure Active Directory**
 
 <Frame>
-<img src="/images/image-35.png" />
+<img src="/images/image-35.png" alt="Navigate to Microsoft Azure Active Directory" />
 </Frame>
 </Step>
 <Step>
@@ -34,14 +34,14 @@ To setup the integration, you must be a BenefitFlow Admin and a Dynamics Admin w
 [portal.azure.com/#view/Microsoft\_AAD\_RegisteredApps/CreateApplicationBlade](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/CreateApplicationBlade/isMSAApp~/false)
 
 <Frame>
-<img src="/images/image-36.png" />
+<img src="/images/image-36.png" alt="Create a  Benefit Flow App in Microsoft" />
 </Frame>
 
 1. Click the “View” button for Manage Microsoft Entra ID
 2. From your Organization’s Overview page, find the “App Registrations” link within the side navigation bar on the left side of the screen
 
 <Frame>
-<img src="/images/image-37.png" />
+<img src="/images/image-37.png" alt="Navigate to the App Registrations page" />
 </Frame>
 
 3\. Once you have navigated to the “App Registrations” management page for your Azure account, click for the “+ New Registration” button to begin the setup process
@@ -49,13 +49,13 @@ To setup the integration, you must be a BenefitFlow Admin and a Dynamics Admin w
 [https://portal.azure.com/#view/Microsoft\_AAD\_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps)
 
 <Frame>
-<img src="/images/image-38.png" />
+<img src="/images/image-38.png" alt="Navigate to the App Registrations page" />
 </Frame>
 
 4\. Once in the “Register an Application” flow, choose a descriptive name for the Integration Application (we recommend something like “BenefitFlow CRM Integration”)
 
 <Frame>
-<img src="/images/image-39.png" />
+<img src="/images/image-39.png" alt="Register an Application" />
 </Frame>
 </Step>
 
@@ -67,17 +67,17 @@ To setup the integration, you must be a BenefitFlow Admin and a Dynamics Admin w
 4. Create a new secret for the BenefitFlow integration
 
 <Frame>
-<img src="/images/image-40.gif" />
+<img src="/images/image-40.gif" alt="Generate and save the Client Credentials and App Secret for your new application" />
 </Frame>
 </Step>
 <Step title="Identify and save your Application ID, Directory ID, newly created Client Secret, and Dynamics Environment URL">
 
 <Frame>
-<img src="/images/image-41.png" />
+<img src="/images/image-41.png" alt="Identify and save your Application ID, Directory ID, newly created Client Secret, and Dynamics Environment URL" />
 </Frame>
 
 <Frame>
-<img src="/images/image-42.png" />
+<img src="/images/image-42.png" alt="Identify your Environment URL for your Dynamics Tenant" />
 </Frame>
 
 Identify your Environment URL for your Dynamics Tenant:
@@ -85,7 +85,7 @@ Identify your Environment URL for your Dynamics Tenant:
 ie [https://org21965585.crm.dynamics.com](https://org21965585.crm.dynamics.com/)
 
 <Frame>
-<img src="/images/image-43.png" />
+<img src="/images/image-43.png" alt="Identify your Environment URL for your Dynamics Tenant" />
 </Frame>
 </Step>
 </Steps>
@@ -103,33 +103,33 @@ Now with your MS Dynamics App Registration completed for the BenefitFlow CRM int
 <Step>
 **Click the “Manage” button to navigate to the Power Platform Environments page**
 <Frame>
-<img src="/images/image-44.png" />
+<img src="/images/image-44.png" alt="Navigate to the Power Platform Admin Center" />
 </Frame>
 </Step>
 
 <Step>
 **Once on the Environments page, select the Microsoft environment that you created your App Registration within (in our example below, we are using the QA environment but this will differ by organization)**
 <Frame>
-<img src="/images/image-45.png" />
+<img src="/images/image-45.png" alt="Navigate to the Power Platform Environments page" />
 </Frame>
 </Step>
 
 <Step>
 **Once in the environment-specific management page, click the “Settings” link towards the top of the page**
 <Frame>
-<img src="/images/image-46.png" />
+<img src="/images/image-46.png" alt="Navigate to the Power Platform Environments page" />
 </Frame>
 </Step>
 <Step>
 **From the Settings page for your selected environment, first click the “Users + Permissions” section to expand the option set and then click the “Application Users” option from within that list**
 <Frame>
-<img src="/images/image-47.png" />
+<img src="/images/image-47.png" alt="Navigate to the Power Platform Environments page" />
 </Frame>
 </Step>
 <Step>
 **From the Application Users settings panel, click the “+ New App User” link at the top of the page**
 <Frame>
-<img src="/images/image-48.png" />
+<img src="/images/image-48.png" alt="Navigate to the Power Platform Environments page" />
 </Frame>
 </Step>
 <Step>
@@ -142,7 +142,7 @@ Now with your MS Dynamics App Registration completed for the BenefitFlow CRM int
    c. Security Roles: we use System Administrator for simplicity and flexibility of the tool, but feel free to use a combination of more limited roles and/or custom security roles so long as the Role Set assigned is able to read Contact, Account, and User data from you Dynamics Dataverse environment
 
 <Frame>
-<img src="/images/image-49.png" />
+<img src="/images/image-49.png" alt="Navigate to the Power Platform Environments page" />
 </Frame>
 </Step>
 </Steps>
@@ -160,16 +160,18 @@ Select Microsoft Dynamics 365 and save your copied credentials and values.
 </Step>
 <Step>
 Click Save & Connect!
-</Step>
-</Steps>
 
 <Frame>
-<img src="/images/image-50.png" />
+<img src="/images/image-50.png" alt="Click Save & Connect!" />
 </Frame>
 <br/>
 <Frame>
-<img src="/images/image-51.png" />
+<img src="/images/image-51.png" alt="Click Save & Connect!" />
 </Frame>
+</Step>
+</Steps>
+
+
 
 #### **That's it!** 
 
@@ -181,8 +183,8 @@ Want to use the integration or verify that it’s working?
 
 View more details on CRM mapping and what features are available here:
 
-[/knowledge-base/filtering-saved-search-lists](/knowledge-base/filtering-saved-search-lists)
-
-[/knowledge-base/crm-integrations-getting-started](/knowledge-base/crm-integrations-getting-started)
-
-[/knowledge-base/overview-of-the-benefitflow-salesforce-integration](/knowledge-base/overview-of-the-benefitflow-salesforce-integration)
+<CardGroup>
+<Card title="Filtering, Saved Searches, and Lists" icon="filter" href="/knowledge-base/filtering-saved-search-lists" horizontal={true}/>
+<Card title="CRM Integrations: Getting Started" icon="circle-play" href="/knowledge-base/crm-integrations-getting-started" horizontal={true}/>
+<Card title="CRM Integrations: Overview Guide" icon="book-open-lines" href="/knowledge-base/overview-of-the-benefitflow-salesforce-integration" horizontal={true}/>
+</CardGroup>
